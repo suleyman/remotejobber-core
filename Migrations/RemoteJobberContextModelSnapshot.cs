@@ -25,6 +25,8 @@ namespace RemoteJobber.Migrations
 
                     b.Property<string>("Name");
 
+                    b.Property<string>("Slug");
+
                     b.HasKey("Id");
 
                     b.ToTable("Categories");

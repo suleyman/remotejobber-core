@@ -14,6 +14,7 @@ namespace RemoteJobber.Migrations
                     Id = table.Column<int>(nullable: false)
                         .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
                     Name = table.Column<string>(nullable: true),
+                    Slug = table.Column<string>(nullable: true),
                     IsActive = table.Column<bool>(nullable: false)
                 },
                 constraints: table =>

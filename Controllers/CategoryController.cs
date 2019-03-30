@@ -20,10 +20,10 @@ namespace RemoteJobber.Controllers
             _context = context;
             if(_context.Categories.Count() == 0 )
             {
-                _context.Categories.Add(new Category{Id=1,Name="Design",IsActive=true});
-                _context.Categories.Add(new Category{Id=2,Name="Development",IsActive=true});
-                _context.Categories.Add(new Category{Id=3,Name="Marketing",IsActive=true});
-                _context.Categories.Add(new Category{Id=4,Name="Account",IsActive=true});
+                _context.Categories.Add(new Category{Id=1,Name="Design",Slug="design",IsActive=true});
+                _context.Categories.Add(new Category{Id=2,Name="Development",Slug="development",IsActive=true});
+                _context.Categories.Add(new Category{Id=3,Name="Marketing",Slug="marketing",IsActive=true});
+                _context.Categories.Add(new Category{Id=4,Name="Account",Slug="account",IsActive=true});
                  
                 _context.SaveChanges();
             }

@@ -8,7 +8,7 @@ using RemoteJobber.Models;
 namespace RemoteJobber.Migrations
 {
     [DbContext(typeof(RemoteJobberContext))]
-    [Migration("20190330221830_Category")]
+    [Migration("20190330224822_Category")]
     partial class Category
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -26,6 +26,8 @@ namespace RemoteJobber.Migrations
                     b.Property<bool>("IsActive");
 
                     b.Property<string>("Name");
+
+                    b.Property<string>("Slug");
 
                     b.HasKey("Id");
 
